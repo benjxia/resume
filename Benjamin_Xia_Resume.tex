@@ -136,10 +136,10 @@
   \resumeSubHeadingListStart
   \resumeSubheading
       {University of California San Diego}{Sept. 2021 -- June 2024}
-      {Bachelor of Science in Computer Science}{GPA: 3.98/4.00}
+      {Bachelor of Science in Computer Science}{Honors: Summa Cum Laude [GPA: 3.98/4.00]}
   \resumeSubheading
       {University of California San Diego}{Sept. 2024 -- June 2025}
-      {Master of Science in Computer Science}{GPA: 4.00/4.00}
+      {Master of Science in Computer Science}{[GPA: 4.00/4.00]}
   \resumeSubHeadingListEnd
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
@@ -152,8 +152,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, C, C++, C\#, CUDA, Go, Python, x86/ARM Assembly, SQL, HTML, CSS, JavaScript/TypeScript, GLSL } \\
-     \textbf{Libraries/Frameworks}{: React, Node.js, ASP.NET, NumPy, PyTorch, OpenCV, scikit-learn, OpenGL, Message Passing Interface (MPI) } \\
+     \textbf{Languages}{: Java, C, C++, Go, Python, x86/ARM Assembly, SQL, HTML, CSS, JavaScript/TypeScript, GLSL } \\
+     \textbf{Libraries/Frameworks}{: React, Node.js, NumPy, PyTorch, OpenCV, scikit-learn, OpenGL, Message Passing Interface (MPI), CUDA, OpenCL } \\
      \textbf{Developer Tools}{: Git, Perforce, Jira, Confluence, GitHub Actions, Jenkins, Docker, Vim, Postman, Miro} \\
     }}
  \end{itemize}
@@ -162,9 +162,17 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \altSubheading
-    {Amazon}{Software Development Engineer Intern}{Sept 2024 -- Dec. 2024}
+    {Amazon}{Software Development Engineer Intern}{Sept. 2024 -- Dec. 2024}
     \altSubheading
     {Niantic}{Computer Vision Engineer Intern}{June 2024 -- Sept. 2024}
+    \resumeItemListStart
+      % \resumeItem{ Ported Gaussian splat render and training routines from Flutter to internal SLAM , improving accessibility for other developers. }
+      \resumeItem{ Optimized real-time Gaussian splat training and rendering, \textbf{increasing live preview performance by 150\%} (frames per second) on Android devices, significantly improving app responsiveness and user experience. }
+      \resumeItem{ Enhanced Gaussian splat rendering by utilizing raster graphics, leading to improved scene reconstruction by enabling increased frame processing and higher frames per second in rendering. }
+      \resumeItem{ Significantly reduced splat previewer micro-stutters by multithreading training and rendering routines to avoid unnecessary stalls. }
+      \resumeItem{ Parallelized tiled splat sorting with OpenCL, \textbf{reducing sorting overhead by up to 67\%} for real-time Gaussian splat rendering. }
+      \resumeItem{ Partnered with UX designers to develop an intuitive \textbf{augmented reality} 3D space scanning preview by writing custom shaders and points of interest detection, allowing users to easily identify under-reconstructed areas in real-time during scans. }
+    \resumeItemListEnd
     \altSubheading
     {Viasat}{Software Engineer Intern}{June 2023 -- Sept. 2023}
     \resumeItemListStart
@@ -173,7 +181,6 @@
       \resumeItem{Resolved race conditions for \textbf{real-time embedded systems} in C, preventing over \textbf{\$5000} in potential aircraft antenna unit damages by redesigning state machines and restricting IPC messages based on log analysis.}
       \resumeItem{Introduced \textbf{Jest} as the new standard unit-testing framework and automated \textbf{50+} unit and end-to-end tests, increasing test-coverage from \textbf{0\%} to \textbf{90\%} by simulating user flow and backend responses. }\resumeItem{
         Seamlessly integrated multiple testing frameworks from \textbf{Go} and \textbf{JavaScript} into a single \textbf{CI/CD} pipeline via \textbf{Jenkins}. }
-
     \resumeItemListEnd
 
     \altSubheading
@@ -185,13 +192,13 @@
     \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+  %  \resumeSubHeadingListEnd
 %-------------------------------------------
     \altSubheading
     {UC San Diego CSE Department}{Undergraduate Tutor}{Sept. 2022 -- June 2024}
@@ -199,7 +206,7 @@
         \resumeItem{Guided \textbf{1500+} students in mastering Python, C, and ARM Assembly programming, and tools such as Git, and Bash. }
         \resumeItem{Instructed \textbf{advanced algorithms}, \textbf{operating systems}, classical artificial intelligence, \textbf{machine learning} theory and implementation with optimization mathematics, scikit-learn, and \textbf{PyTorch}. }
         \resumeItem{\textbf{Identified and patched security vulnerabilities} for programming assignment autograders on Gradescope, completely eliminating most student autograder exploits.}
-        \resumeItem{Hosted office hours to assist students with programming assignments/conceptual problems and achieved \textbf{100\%} student approval ratings across multiple courses.}
+        \resumeItem{Hosted office hours and led discussion sections to assist students with programming assignments/conceptual problems and achieved \textbf{100\%} student approval ratings across multiple courses.}
       \resumeItemListEnd
 
     % \altSubheading
@@ -218,25 +225,26 @@
       % \resumeProjectHeading
       %   {\href{https://github.com/ucsd-cse125-sp24/group5}{\underline{\textbf{Four Seasons}}} $|$ \emph{C++, OpenGL, GLSL}}{}
       %   \resumeItemListStart
-      %     \resumeItem{ Four Seasons is a real-time 2 versus 2 3D capture-the-flag shooter game. }
-      %     \resumeItem{ Designed and implemented a custom graphics engine, with support for textures, animations, shadow maps, non-photorealistic rendering, dynamic lighting/environments, and particles. }
-      %     \resumeItemListEnd
+      %     \resumeItem{ Four Seasons is a real-time, character-based, multiplayer 3D capture-the-flag shooter game. }
+      %     \resumeItem{ Designed and implemented a custom graphics engine, with support for textures, 3D animations, shadow mapping, non-photorealistic rendering, dynamic lighting and environments, and particles. }
+      %     \resumeItem{ Supported cross-platform development by developing custom operating system and architecture agnostic networking and graphics libraries. }
+          % \resumeItemListEnd
       \resumeProjectHeading
-          {\href{}{\underline{\textbf{Game Recommender}}} $|$ \emph{Pandas, NumPy, Scikit-Learn}}{}
+          {\href{}{\underline{\textbf{Steam Recommender System}}} $|$ \emph{Pandas, NumPy, Scikit-Learn}}{}
           \resumeItemListStart
             \resumeItem{Designed a collborative-filtering based \textbf{recommender system} to predict which games Steam users are likely to play. }
             \resumeItem{Optimized models by \textbf{hyperparameter tuning} with grid search, cross-validation, and ensembling predictions. }
             \resumeItem{Utilized feature engineering with \textbf{text-mining} techniques such as topic modeling to mitigate cold-start problem.}
             \resumeItem{Ranked among the \textbf{top 0.3\%} participants in machine learning competition in both regression and classification tasks.}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\href{https://github.com/benjxia/notebookpicker}{\underline{\textbf{Notebook Picker}}} $|$ \emph{React, HTML, CSS, JavaScript, ASP.NET, C\#, Oracle Cloud}}{}
-          \resumeItemListStart
-            \resumeItem{Led team of 5 students to develop a full-stack web application for filtering laptops by specifications/price to assist with shopping.}
-            \resumeItem{Planned and built a \textbf{REST API} for finding and filtering laptops based on CPU/GPU model, brands, release, etc. by querying from \textbf{Oracle Cloud} database with an ASP.NET backend.}
-            \resumeItem{Reduced API response times by over \textbf{90\%} by caching SQL queries with Entity Framework Core object relational mapping.}
-            \resumeItem{Designed wireframe layout in \textbf{Miro} and implemented routing and user interface with React.}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\href{https://github.com/benjxia/notebookpicker}{\underline{\textbf{Notebook Picker}}} $|$ \emph{React, HTML, CSS, JavaScript, ASP.NET, C\#, Oracle Cloud}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Led team of 5 students to develop a full-stack web application for filtering laptops by specifications/price to assist with shopping.}
+      %       \resumeItem{Planned and built a \textbf{REST API} for finding and filtering laptops based on CPU/GPU model, brands, release, etc. by querying from \textbf{Oracle Cloud} database with an ASP.NET backend.}
+      %       \resumeItem{Reduced API response times by over \textbf{90\%} by caching SQL queries with Entity Framework Core object relational mapping.}
+      %       \resumeItem{Designed wireframe layout in \textbf{Miro} and implemented routing and user interface with React.}
+      %     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 

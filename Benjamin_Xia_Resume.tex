@@ -55,8 +55,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{0pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -74,14 +74,14 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\altSubheading}[3]{
   \vspace{4pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1}, {#2} & #3 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 
@@ -89,24 +89,24 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \vspace{4pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-8pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -150,6 +150,7 @@
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
+ \vspace{4pt}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: C, C++, Java, C\#, Go, Python, x86/ARM Assembly, SQL, HTML, CSS, JavaScript/TypeScript, GLSL } \\
@@ -166,8 +167,8 @@
     \altSubheading
     {Niantic}{Computer Vision Engineer Intern}{June 2024 -- Sept. 2024}
     \resumeItemListStart
-      \resumeItem{ Increased live preview performance by \textbf{150\%} (frames per second) on Android devices, significantly enhancing app responsiveness and user experience by reducing micro-stutters and optimizing GPU kernels. }
-      \resumeItem{ Optimized real-time \textbf{Gaussian splat} training and rendering by implementing multithreading and switching to raster-based splat rendering, simultaneously improving overall performance and scene reconstruction quality by enabling greater frame processing. }
+      \resumeItem{ Increased live preview performance by \textbf{200+\%} (frames per second) on Android devices, significantly enhancing app responsiveness and user experience by reducing micro-stutters and optimizing GPU kernels. }
+      \resumeItem{ Optimized real-time \textbf{Gaussian splat} training and rendering by multithreading and switching to raster-based splat rendering, simultaneously improving overall performance and scene reconstruction quality by enabling greater frame processing. }
       \resumeItem{ Partnered with UX designers to develop an intuitive \textbf{augmented reality} 3D space scanning preview by writing custom shaders and points of interest detectors, allowing users to easily identify under-reconstructed areas in real-time during scans. }
       \resumeItem{ Implemented \textbf{real-time occlusion} support in Niantic 8th Wall's internal AR engine, elevating immersion in AR experiences. }
       % Something about improving map tracker if we get to that?
@@ -178,8 +179,8 @@
       \resumeItem{Reduced human intervention by \textbf{95\%} for key swaps by overhauling modem UI with \textbf{TypeScript React} to automate manual commands. }
       \resumeItem{Enhanced modem/network security by updating interfaces and \textbf{Docker} containers to utilize new SSL certificates from key swap tool. }
       \resumeItem{Resolved race conditions for \textbf{real-time embedded systems} in C, preventing over \textbf{\$5000} in potential aircraft antenna unit damages by redesigning state machines and restricting IPC messages between \textbf{operating system daemons} based on log analysis.}
-      \resumeItem{Boosted code coverage from \textbf{0\% to 90\%} by introducing \textbf{Jest} as the new standard unit-testing framework and automating \textbf{50+} unit and end-to-end tests to mock user flow and backend responses. }\resumeItem{
-        Seamlessly integrated multiple testing frameworks from \textbf{Go} and \textbf{JavaScript} into a single \textbf{CI/CD} pipeline via \textbf{Jenkins}. }
+      \resumeItem{Boosted code coverage from \textbf{0\% to 90\%} by introducing \textbf{Jest} as the unit-testing framework, automating \textbf{50+} unit and end-to-end tests to mock user flow and backend responses. }
+      \resumeItem{Seamlessly integrated multiple testing frameworks from \textbf{Go} and \textbf{JavaScript} into a single \textbf{CI/CD} pipeline via \textbf{Jenkins}. }
     \resumeItemListEnd
 
     % \altSubheading

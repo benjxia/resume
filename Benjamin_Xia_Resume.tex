@@ -144,7 +144,7 @@
   \resumeSubHeadingListEnd
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Courses}{: AI/Machine Learning, Deep Learning, Recommender Systems, Natural Language Processing, Operating Systems, Computer Security, Systems Programming, Data Structures, Algorithms, Digital Systems, Computer Architecture, Computer Graphics, Parallel Computing } \\
+     \textbf{Courses}{: AI/Machine Learning, Deep Learning, Natural Language Processing/Large Language Models, Operating Systems, Computer Security, Systems Programming, Data Structures, Algorithms, Digital Systems, Computer Architecture, Computer Graphics, Parallel Computing } \\
     }}
  \end{itemize}
 
@@ -165,12 +165,16 @@
   \resumeSubHeadingListStart
     \altSubheading
     {Amazon}{Software Development Engineer Intern}{Sept. 2024 -- Dec. 2024}
+    \resumeItemListStart
+      \resumeItem{ Refined the design and added support for time-sensitive notifications for an app with \textbf{200 million+} users, enabling critical alerts to bypass Do Not Disturb settings with \textbf{AWS SNS, Java} and \textbf{Swift}. }
+
+      \resumeItemListEnd
     \altSubheading
     {Niantic}{Computer Vision Engineer Intern}{June 2024 -- Sept. 2024}
     \resumeItemListStart
-      \resumeItem{ Increased live preview performance by \textbf{200+\%} (frames per second) on Android devices, significantly enhancing app responsiveness and user experience by reducing micro-stutters and optimizing GPU kernels. }
-      \resumeItem{ Optimized real-time \textbf{Gaussian splat} training and rendering by multithreading and switching to raster-based splat rendering, simultaneously improving overall performance and scene reconstruction quality by enabling greater frame processing. }
-      \resumeItem{ Partnered with UX designers to develop an intuitive \textbf{augmented reality} 3D space scanning preview by writing custom shaders and points of interest detectors, allowing users to easily identify under-reconstructed areas in real-time during scans. }
+      \resumeItem{ Increased live preview performance by \textbf{200+\%} (frames per second) on Android devices, significantly enhancing app responsiveness and user experience by reducing micro-stutters and \textbf{optimizing OpenCL GPU kernels}. }
+      \resumeItem{ Boosted \textbf{Gaussian splat} reconstruction quality by multithreading training/rendering routines and switching to raster-based splat rendering with C++ and OpenGL, \textbf{increasing frames processed by 100\%}, while simultaneously improving overall performance. }
+      \resumeItem{ Partnered with UX designers to develop an intuitive \textbf{augmented reality} 3D space scanning preview by writing custom GLSL shaders and points of interest detectors, allowing users to easily identify under-reconstructed areas in real-time during scans. }
       \resumeItem{ Implemented \textbf{real-time occlusion} support in Niantic 8th Wall's internal AR engine, elevating immersion in AR experiences. }
       % Something about improving map tracker if we get to that?
       \resumeItemListEnd
@@ -232,7 +236,7 @@
           \resumeItem{ Supported cross-platform development by developing custom operating system and architecture agnostic networking and graphics libraries, with cross-compatibility between macOS and Windows machines. }
           \resumeItemListEnd
       \resumeProjectHeading
-          {\href{}{\underline{\textbf{Steam Recommender System}}} $|$ \emph{Pandas, NumPy, Scikit-Learn}}{}
+          {\href{}{\underline{\textbf{Steam Recommender}}} $|$ \emph{Pandas, NumPy, Scikit-Learn}}{}
           \resumeItemListStart
             % \resumeItem{Designed a collborative-filtering based \textbf{recommender system} to predict which games Steam users are likely to play. }
             \resumeItem{Optimized models by \textbf{hyperparameter tuning} with grid search, cross-validation, and ensembling predictions. }

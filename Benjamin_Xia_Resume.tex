@@ -144,7 +144,7 @@
   \resumeSubHeadingListEnd
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Courses}{: AI/Machine Learning, Deep Learning, Natural Language Processing/Large Language Models, Operating Systems, Computer Security, Systems Programming, Data Structures, Algorithms, Digital Systems, Computer Architecture, Computer Graphics, Parallel Computing } \\
+     \textbf{Courses}{: AI/Machine Learning, Deep Learning, Natural Language Processing, Operating Systems, Computer Security, Systems Programming, Data Structures, Algorithms, Digital Systems, Computer Architecture, Computer Graphics, Parallel Computing, Virtualization } \\
     }}
  \end{itemize}
 
@@ -154,9 +154,9 @@
  \vspace{4pt}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++, Java, C\#, Go, Python, x86/ARM Assembly, SQL, HTML, CSS, JavaScript/TypeScript, GLSL } \\
-     \textbf{Libraries/Frameworks}{: React, Node.js, NumPy, PyTorch, OpenCV, scikit-learn, OpenGL, Message Passing Interface (MPI), CUDA, OpenCL } \\
-     \textbf{Developer Tools}{: Git, Perforce, Jira, Confluence, GitHub Actions, Jenkins, Docker, Vim, Postman, Miro} \\
+     \textbf{Languages}{: C, C++, Python, CUDA, OpenCL, Java, C\#, Go, x86/ARM Assembly, SQL, HTML, CSS, JavaScript/TypeScript } \\
+     \textbf{Libraries/Frameworks}{: PyTorch, React, Node.js, NumPy,  OpenCV, scikit-learn, OpenGL, Message Passing Interface (MPI) } \\
+     \textbf{Developer Tools}{: Git, Docker, Perforce, Jira, Confluence, GitHub Actions, Jenkins, Vim} \\
     }}
  \end{itemize}
 
@@ -166,26 +166,26 @@
     \altSubheading
     {Amazon}{Software Development Engineer Intern}{Sept. 2024 -- Dec. 2024}
     \resumeItemListStart
-      \resumeItem{ Refined the design and added support for time-sensitive notifications for an app with \textbf{200 million+} users and \textbf{10000+} transactions per second, enabling critical alerts to bypass Do Not Disturb settings with \textbf{AWS SNS, Java} and \textbf{Swift}. }
+      \resumeItem{ Leveraged \textbf{AWS Bedrock Large Language Models} to design/deliver a new notification summarization feature to reduce user fatigue. }
+      \resumeItem{ Integrated safeguards for \textbf{customer-facing LLM endpoints} by enforcing \textbf{cryptographic signatures} against request forgery, \textbf{rate-limiting} requests, and Bedrock guardrails against adversarial user inputs. }
+      \resumeItem{ Built support for iOS time-sensitive notifications for an app with \textbf{200 million+} users and \textbf{10000+} transactions per second, enabling critical alerts to bypass Do Not Disturb settings with \textbf{AWS SNS}, Java and \textbf{Swift}. }
       \resumeItem{ \textbf{Eliminated} manual developer intervention by building a self-service system with \textbf{React, Redux}, \textbf{AWS DynamoDB} and \textbf{ECS}, enabling marketing teams and automatic services to directly attach images to push notifications. }
-      \resumeItem{ Design and delivered a notification summarization feature by leveraging \textbf{AWS Bedrock Large Language Models} to reduce user fatigue. }
-      \resumeItem{ Integrated safeguards for customer-facing services/LLM endpoints by enforcing \textbf{cryptographic signatures} against request forgery, \textbf{rate-limiting} requests, and Bedrock guardrails against adversarial user inputs. }
       \resumeItemListEnd
     \altSubheading
     {Niantic}{Computer Vision Engineer Intern}{June 2024 -- Sept. 2024}
     \resumeItemListStart
-      \resumeItem{ Increased live preview performance by \textbf{200+\%} (frames per second) on Android devices, significantly enhancing app responsiveness and user experience by reducing micro-stutters and \textbf{optimizing OpenCL GPU kernels}. }
-      \resumeItem{ Boosted \textbf{Gaussian splat} reconstruction quality by multithreading training/rendering routines and switching to raster-based splat rendering with C++ and OpenGL, \textbf{increasing frames processed by 100\%}, while simultaneously improving overall performance. }
       \resumeItem{ Partnered with UX designers to develop an intuitive \textbf{augmented reality} 3D space scanning preview by writing custom GLSL shaders and points of interest detectors, allowing users to easily identify under-reconstructed areas in real-time during scans. }
       \resumeItem{ Implemented \textbf{real-time occlusion} support in Niantic 8th Wall's internal AR engine, elevating immersion in AR experiences. }
+      \resumeItem{ Boosted \textbf{Gaussian splat} reconstruction quality by multithreading training/rendering routines and switching to raster-based splat rendering with C++ and OpenGL, \textbf{increasing frames processed by 100\%}, while simultaneously improving overall performance. }
+      \resumeItem{ Increased live preview performance by \textbf{200+\%} (frames per second) on Android devices, significantly enhancing app responsiveness and user experience by reducing micro-stutters and \textbf{optimizing OpenCL GPU kernels}. }
       \resumeItemListEnd
     \altSubheading
     {Viasat}{Software Engineer Intern}{June 2023 -- Sept. 2023}
     \resumeItemListStart
+      \resumeItem{Resolved race conditions for \textbf{real-time embedded systems} in C, preventing over \textbf{\$5000} in potential aircraft antenna unit damages by redesigning state machines and restricting IPC messages between \textbf{operating system daemons} based on log analysis.}
       \resumeItem{Reduced human intervention by \textbf{95\%} for key swaps by overhauling modem UI with \textbf{TypeScript React} to automate manual commands. }
       \resumeItem{Enhanced modem/network security by updating interfaces and \textbf{Docker} containers to utilize new SSL certificates from key swap tool. }
-      \resumeItem{Resolved race conditions for \textbf{real-time embedded systems} in C, preventing over \textbf{\$5000} in potential aircraft antenna unit damages by redesigning state machines and restricting IPC messages between \textbf{operating system daemons} based on log analysis.}
-      \resumeItem{Boosted code coverage from \textbf{0\% to 90\%} by introducing \textbf{Jest} as the unit-testing framework, automating \textbf{50+} unit and end-to-end tests to mock user flow and backend responses. }
+      \resumeItem{Boosted code coverage from \textbf{0\% to 90\%} by introducing \textbf{Jest} as the unit-testing framework, automating \textbf{100+} unit and end-to-end tests to mock user flow and backend responses. }
       \resumeItem{Seamlessly integrated multiple testing frameworks from \textbf{Go} and \textbf{JavaScript} into a single \textbf{CI/CD} pipeline via \textbf{Jenkins}. }
     \resumeItemListEnd
 
@@ -211,9 +211,9 @@
       \resumeItemListStart
         % \resumeItem{Guided \textbf{1500+} students in mastering Python, C, and ARM Assembly programming, and tools such as Git, and Bash. }
         % \resumeItem{Instructed \textbf{advanced algorithms}, \textbf{operating systems}, classical artificial intelligence, \textbf{machine learning} theory and implementation with optimization mathematics, scikit-learn, and \textbf{PyTorch}. }
-        \resumeItem{Instructed \textbf{1500+} students in \textbf{advanced algorithms}, \textbf{operating systems}, classical artificial intelligence, \textbf{machine learning} theory/implementation, scikit-learn, and \textbf{PyTorch}. }
-        \resumeItem{Identified/patched \textbf{security vulnerabilities} for programming assignment autograders, eliminating most student autograder exploits.}
+        \resumeItem{Instructed \textbf{1500+} students in \textbf{machine learning} theory/implementation, scikit-learn, and \textbf{PyTorch}, \textbf{advanced algorithms}, \textbf{operating systems}, and classical \textbf{artificial intelligence}. }
         \resumeItem{Achieved \textbf{100\% student approval} across multiple courses by hosting office hours, and leading discussion sections to assist students with Python, C, ARM Assembly, and conceptual problems.}
+        \resumeItem{Identified/patched \textbf{security vulnerabilities} for programming assignment autograders, eliminating most student autograder exploits.}
       \resumeItemListEnd
 
     \altSubheading
@@ -230,19 +230,19 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+      {\href{}{\underline{\textbf{Steam Recommender}}} $|$ \emph{Pandas, NumPy, Scikit-Learn}}{}
+      \resumeItemListStart
+        % \resumeItem{Designed a collborative-filtering based \textbf{recommender system} to predict which games Steam users are likely to play. }
+        \resumeItem{Ranked among the \textbf{top 0.3\%} participants in \textbf{machine learning competition} in both regression and classification tasks.}
+        \resumeItem{Optimized models by \textbf{hyperparameter tuning} with grid search, cross-validation, and ensembling predictions. }
+        \resumeItem{Utilized \textbf{natural language processing} techniques such as topic modeling to mitigate the cold-start problem.}
+      \resumeItemListEnd
+      \resumeProjectHeading
         {\href{https://github.com/ucsd-cse125-sp24/group5}{\underline{\textbf{Four Seasons}}} $|$ \emph{C++, OpenGL, GLSL}}{}
         \resumeItemListStart
           \resumeItem{ Four Seasons is a real-time, character-based, multiplayer 3D capture-the-flag shooter game, heavily inspired by classical music. }
           \resumeItem{ Designed and implemented a \textbf{custom graphics engine}, with support for textures, 3D animations, shadow mapping, non-photorealistic rendering, dynamic lighting/environments, and particles via instanced rendering. }
           \resumeItem{ Supported cross-platform development and gameplay by building custom operating system and architecture agnostic networking and graphics libraries. }
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\href{}{\underline{\textbf{Steam Recommender}}} $|$ \emph{Pandas, NumPy, Scikit-Learn}}{}
-          \resumeItemListStart
-            % \resumeItem{Designed a collborative-filtering based \textbf{recommender system} to predict which games Steam users are likely to play. }
-            \resumeItem{Optimized models by \textbf{hyperparameter tuning} with grid search, cross-validation, and ensembling predictions. }
-            \resumeItem{Utilized \textbf{natural language processing} techniques such as topic modeling to mitigate the cold-start problem.}
-            \resumeItem{Ranked among the \textbf{top 0.3\%} participants in \textbf{machine learning competition} in both regression and classification tasks.}
           \resumeItemListEnd
       % \resumeProjectHeading
       %     {\href{https://github.com/benjxia/notebookpicker}{\underline{\textbf{Notebook Picker}}} $|$ \emph{React, HTML, CSS, JavaScript, ASP.NET, C\#, Oracle Cloud}}{}
